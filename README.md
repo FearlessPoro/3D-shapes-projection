@@ -6,5 +6,7 @@ A project made in WXdevcpp that takes a shape encoded in a way, specified in DOC
 # Folders:
 
 BIN: .exe file and few example figures
+
 DOC: Documentation and how-to-use
+
 SRC: All the source code used to make the project
