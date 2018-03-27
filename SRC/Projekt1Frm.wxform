@@ -1,0 +1,537 @@
+object frmNewForm: TfrmNewForm
+  Left = 8
+  Top = 8
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Projekt1'
+  ClientHeight = 446
+  ClientWidth = 949
+  Color = clAppWorkSpace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = True
+  PopupMenu = DesignerPopup.Owner
+  Visible = True
+  OnClick = FormClick
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  EVT_CLOSE = 'OnClose'
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'Projekt1Frm'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxFrame'
+  Wx_Center = True
+  Wx_Hidden = False
+  Wx_SizeToContents = True
+  Wx_GeneralStyle = []
+  Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
+  Wx_DesignerType = dtWxFrame
+  Wx_Border = 0
+  Wx_BorderAlignment = []
+  isAuimanagerAvailable = False
+  PixelsPerInch = 96
+  TextHeight = 12
+  object boxGlowny: TWxBoxSizer
+    Left = 0
+    Top = 0
+    Width = 949
+    Height = 446
+    Align = alClient
+    TabOrder = 0
+    Wx_Class = 'wxBoxSizer'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_IDName = 'ID_WXBOXSIZER1'
+    Wx_IDValue = 1001
+    object boxMenu: TWxBoxSizer
+      Left = 5
+      Top = 147
+      Width = 125
+      Height = 265
+      TabOrder = 0
+      Orientation = wxVertical
+      Wx_Class = 'wxBoxSizer'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_IDName = 'ID_WXBOXSIZER2'
+      Wx_IDValue = 1047
+      object okienkoBryly: TWxStaticBoxSizer
+        Left = 6
+        Top = 5
+        Width = 112
+        Height = 50
+        TabOrder = 0
+        Orientation = wxVertical
+        Wx_Caption = 'Wczytywanie bry'#322'y'
+        Wx_Class = 'wxStaticBoxSizer'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_IDName = 'ID_WXSTATICBOXSIZER4'
+        Wx_IDValue = 1049
+        object wczytaj: TWxButton
+          Left = 10
+          Top = 20
+          Width = 92
+          Height = 20
+          Caption = 'wczytaj dane'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -9
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+          EVT_BUTTON = 'WxButton1Click'
+          Wx_BKColor = clBlack
+          Wx_ButtonStyle = []
+          Wx_Class = 'wxButton'
+          Wx_ControlOrientation = wxControlVertical
+          Wx_Default = False
+          Wx_EventList.Strings = (
+            'EVT_BUTTON:OnClick'
+            'EVT_UPDATE_UI:OnUpdateUI')
+          Wx_FGColor = clBlack
+          Wx_GeneralStyle = []
+          Wx_Hidden = False
+          Wx_IDName = 'ID_WXBUTTON1'
+          Wx_IDValue = 1030
+          InvisibleBGColorString = 'STD:SKY BLUE'
+          InvisibleFGColorString = 'STD:BLACK'
+          Color = clSkyBlue
+          Wx_PaneCaption = 'WxButton1'
+          Wx_PaneName = 'WxButton1_Pane'
+          Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+          Wx_Aui_Dockable_Direction = []
+          Wx_Aui_Pane_Style = []
+          Wx_Aui_Pane_Buttons = []
+          Wx_BestSize_Height = 0
+          Wx_BestSize_Width = 0
+          Wx_MinSize_Height = 0
+          Wx_MinSize_Width = 0
+          Wx_MaxSize_Height = 0
+          Wx_MaxSize_Width = 0
+          Wx_Floating_Height = 0
+          Wx_Floating_Width = 0
+          Wx_Floating_X_Pos = 0
+          Wx_Floating_Y_Pos = 0
+        end
+      end
+      object okienkoPlaszczyzny: TWxStaticBoxSizer
+        Left = 18
+        Top = 65
+        Width = 88
+        Height = 81
+        TabOrder = 1
+        Orientation = wxVertical
+        Wx_Caption = 'Kierunek p'#322'aszczyzny'
+        Wx_Class = 'wxStaticBoxSizer'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_IDName = 'ID_WXSTATICBOXSIZER5'
+        Wx_IDValue = 1050
+        Wx_Alignment = [wxALIGN_CENTER, wxALIGN_CENTER_HORIZONTAL]
+        object OX: TWxRadioButton
+          Left = 10
+          Top = 20
+          Width = 68
+          Height = 10
+          Caption = 'O'#347' OX'
+          Checked = True
+          TabOrder = 1
+          TabStop = True
+          EVT_RADIOBUTTON = 'WxRadioButton4Click'
+          Wx_BGColor = clBlack
+          Wx_Class = 'wxRadioButton'
+          Wx_ControlOrientation = wxControlVertical
+          Wx_FGColor = clBlack
+          Wx_GeneralStyle = []
+          Wx_IDName = 'ID_WXRADIOBUTTON1'
+          Wx_IDValue = 1036
+          Wx_RadioButtonStyle = []
+          Wx_PaneCaption = 'WxRadioButton1'
+          Wx_PaneName = 'WxRadioButton1_Pane'
+          Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+          Wx_Aui_Dockable_Direction = []
+          Wx_Aui_Pane_Style = []
+          Wx_Aui_Pane_Buttons = []
+          Wx_BestSize_Height = 0
+          Wx_BestSize_Width = 0
+          Wx_MinSize_Height = 0
+          Wx_MinSize_Width = 0
+          Wx_MaxSize_Height = 0
+          Wx_MaxSize_Width = 0
+          Wx_Floating_Height = 0
+          Wx_Floating_Width = 0
+          Wx_Floating_X_Pos = 0
+          Wx_Floating_Y_Pos = 0
+        end
+        object OY: TWxRadioButton
+          Left = 10
+          Top = 40
+          Width = 68
+          Height = 10
+          Caption = 'O'#347' OY'
+          TabOrder = 2
+          EVT_RADIOBUTTON = 'WxRadioButton5Click'
+          Wx_BGColor = clBlack
+          Wx_Class = 'wxRadioButton'
+          Wx_ControlOrientation = wxControlVertical
+          Wx_FGColor = clBlack
+          Wx_GeneralStyle = []
+          Wx_IDName = 'ID_WXRADIOBUTTON2'
+          Wx_IDValue = 1037
+          Wx_RadioButtonStyle = []
+          Wx_PaneCaption = 'WxRadioButton2'
+          Wx_PaneName = 'WxRadioButton2_Pane'
+          Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+          Wx_Aui_Dockable_Direction = []
+          Wx_Aui_Pane_Style = []
+          Wx_Aui_Pane_Buttons = []
+          Wx_BestSize_Height = 0
+          Wx_BestSize_Width = 0
+          Wx_MinSize_Height = 0
+          Wx_MinSize_Width = 0
+          Wx_MaxSize_Height = 0
+          Wx_MaxSize_Width = 0
+          Wx_Floating_Height = 0
+          Wx_Floating_Width = 0
+          Wx_Floating_X_Pos = 0
+          Wx_Floating_Y_Pos = 0
+        end
+        object OZ: TWxRadioButton
+          Left = 10
+          Top = 60
+          Width = 68
+          Height = 11
+          Caption = 'O'#347' OZ'
+          TabOrder = 3
+          EVT_RADIOBUTTON = 'OSClick'
+          Wx_BGColor = clBlack
+          Wx_Class = 'wxRadioButton'
+          Wx_ControlOrientation = wxControlVertical
+          Wx_FGColor = clBlack
+          Wx_GeneralStyle = []
+          Wx_IDName = 'ID_WXRADIOBUTTON3'
+          Wx_IDValue = 1038
+          Wx_RadioButtonStyle = []
+          Wx_PaneCaption = 'WxRadioButton3'
+          Wx_PaneName = 'WxRadioButton3_Pane'
+          Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+          Wx_Aui_Dockable_Direction = []
+          Wx_Aui_Pane_Style = []
+          Wx_Aui_Pane_Buttons = []
+          Wx_BestSize_Height = 0
+          Wx_BestSize_Width = 0
+          Wx_MinSize_Height = 0
+          Wx_MinSize_Width = 0
+          Wx_MaxSize_Height = 0
+          Wx_MaxSize_Width = 0
+          Wx_Floating_Height = 0
+          Wx_Floating_Width = 0
+          Wx_Floating_X_Pos = 0
+          Wx_Floating_Y_Pos = 0
+        end
+      end
+      object okienkoPredkosci: TWxStaticBoxSizer
+        Left = 5
+        Top = 156
+        Width = 115
+        Height = 69
+        TabOrder = 2
+        Orientation = wxVertical
+        Wx_Caption = 'Wyb'#243'r pr'#281'dko'#347'ci'
+        Wx_Class = 'wxStaticBoxSizer'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_IDName = 'ID_WXSTATICBOXSIZER6'
+        Wx_IDValue = 1051
+        object predkosc: TWxScrollBar
+          Left = 10
+          Top = 20
+          Width = 95
+          Height = 13
+          PageSize = 0
+          TabOrder = 1
+          EVT_COMMAND_SCROLL = 'WxScrollBar2Scroll'
+          Wx_Class = 'wxScrollBar'
+          Wx_ControlOrientation = wxControlVertical
+          Wx_Enabled = False
+          Wx_GeneralStyle = []
+          Wx_Hidden = False
+          Wx_IDName = 'WxScrollBar'
+          Wx_IDValue = 1041
+          Wx_SBOrientation = wxSB_HORIZONTAL
+          InvisibleBGColorString = 'STD:WHITE'
+          Wx_PaneCaption = 'WxScrollBar2'
+          Wx_PaneName = 'WxScrollBar2_Pane'
+          Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+          Wx_Aui_Dockable_Direction = []
+          Wx_Aui_Pane_Style = []
+          Wx_Aui_Pane_Buttons = []
+          Wx_BestSize_Height = 0
+          Wx_BestSize_Width = 0
+          Wx_MinSize_Height = 0
+          Wx_MinSize_Width = 0
+          Wx_MaxSize_Height = 0
+          Wx_MaxSize_Width = 0
+          Wx_Floating_Height = 0
+          Wx_Floating_Width = 0
+          Wx_Floating_X_Pos = 0
+          Wx_Floating_Y_Pos = 0
+        end
+        object tekstPredkosc: TWxStaticText
+          Left = 13
+          Top = 43
+          Width = 88
+          Height = 16
+          Caption = 'Wybrana pr'#281'dko'#347#263':'
+          TabOrder = 2
+          Wx_BGColor = clBlack
+          Wx_Class = 'wxStaticText'
+          Wx_ControlOrientation = wxControlVertical
+          Wx_FGColor = clBlack
+          Wx_GeneralStyle = []
+          Wx_Hidden = False
+          Wx_IDName = 'ID_WXSTATICTEXT1'
+          Wx_IDValue = 1042
+          Wx_LabelStyle = []
+          Wx_PaneCaption = 'WxStaticText1'
+          Wx_PaneName = 'WxStaticText1_Pane'
+          Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+          Wx_Aui_Dockable_Direction = []
+          Wx_Aui_Pane_Style = []
+          Wx_Aui_Pane_Buttons = []
+          Wx_BestSize_Height = 0
+          Wx_BestSize_Width = 0
+          Wx_MinSize_Height = 0
+          Wx_MinSize_Width = 0
+          Wx_MaxSize_Height = 0
+          Wx_MaxSize_Width = 0
+          Wx_Floating_Height = 0
+          Wx_Floating_Width = 0
+          Wx_Floating_X_Pos = 0
+          Wx_Floating_Y_Pos = 0
+        end
+      end
+      object Start: TWxButton
+        Left = 25
+        Top = 235
+        Width = 75
+        Height = 25
+        Caption = 'Start'
+        TabOrder = 3
+        EVT_BUTTON = 'StartClick'
+        Wx_BKColor = clBlack
+        Wx_ButtonStyle = []
+        Wx_Class = 'wxButton'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_EventList.Strings = (
+          'EVT_BUTTON:OnClick'
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_START'
+        Wx_IDValue = 1055
+        Wx_PaneCaption = 'WxButton1'
+        Wx_PaneName = 'WxButton1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+    end
+    object boxPanele: TWxBoxSizer
+      Left = 140
+      Top = 5
+      Width = 860
+      Height = 550
+      TabOrder = 1
+      Wx_Class = 'wxBoxSizer'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_IDName = 'ID_WXBOXSIZER3'
+      Wx_IDValue = 1052
+      object panelLewy: TWxPanel
+        Left = 5
+        Top = 5
+        Width = 420
+        Height = 540
+        Color = clWhite
+        TabOrder = 0
+        Wx_BKColor = clBlack
+        Wx_Class = 'wxPanel'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_EventList.Strings = (
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXPANEL1'
+        Wx_IDValue = 1053
+        InvisibleBGColorString = 'STD:WHITE'
+        Wx_PaneCaption = 'WxPanel1'
+        Wx_PaneName = 'WxPanel1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object panelPrawy: TWxPanel
+        Left = 435
+        Top = 5
+        Width = 420
+        Height = 540
+        Color = clWhite
+        TabOrder = 1
+        EVT_UPDATE_UI = 'WxPanel2UpdateUI'
+        Wx_BKColor = clBlack
+        Wx_Class = 'wxPanel'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_EventList.Strings = (
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXPANEL2'
+        Wx_IDValue = 1054
+        InvisibleBGColorString = 'STD:WHITE'
+        Wx_PaneCaption = 'WxPanel2'
+        Wx_PaneName = 'WxPanel2_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+    end
+  end
+  object plik: TWxOpenFileDialog
+    Left = 25
+    Top = 118
+    Width = 28
+    Height = 27
+    TabOrder = 1
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00B7A293006349
+      3500634935006349350063493500634935006349350063493500634935006349
+      3500634935006349350063493500634935006349350063493500B7A29300FEFD
+      FC00E1DCD800E0D7D200DFD2CA00DFCEC300DDC8BB00DCC3B300DBBFAD00DBBB
+      A700DBBBA700DBBBA700DBBBA700DBBBA700CFB4A30063493500B7A29300FEFE
+      FE0063493500634935006349350063493500634935006349350063493500FAED
+      E700F9EAE400F8E8E000F8E5DD00F6E2D800CFB4A30063493500B7A29300FFFF
+      FF00B3998A00F9F7F600F0EAE700E6DBD600DCCFC700D2C1B80063493500FAF0
+      EA00F9EDE700F9EBE300F8E7E000F7E6DC00CFB4A30063493500B7A29300FFFF
+      FF00B89F9100FFFFFF0000FF0000EFE8E500E4DAD400DACCC50063493500FBF3
+      EF00FBF0EB00F9EDE700F9EAE400F8E8E100CFB4A30063493500BAA59600FFFF
+      FF00BFA69900B9A09200B49A8B00AF968600AA918100A58B7A0063493500FCF5
+      F200FCF2EE00FBF0EB00FAEDE800F9EBE400D0B9AB0063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFEFD00FEFBFB00FEFAF800FDF8
+      F600FCF5F200FCF3EF00FBF0EC00F9EEE800D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FEFDFD00FEFCFB00FEFA
+      F800FDF8F600FCF5F200FCF3EF00FAF0EC00D1C1B60063493500C8B2A300FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000FFFEFE000000
+      0000000000000000000000000000FCF3EF00D1C1B60063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00000000000000000000000000FFFFFF00FFFFFF00FEFE
+      FD00FEFCFC00FEFAF900FDF8F600FCF6F300D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF000000
+      0000000000000000000000000000FDF9F600D1C1B60063493500C8B2A300FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFEFE00FEFDFC00FEFBF900FDF9F70063493500EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00E9A58400E99F7A00E7976E00E68E6200E5865600E37D
+      4A00E3764000E2723900E2723900E2723900E2723900C8622F00EAAA8B00FFC2
+      A200FFC2A200FEC09F00FDBD9A00FCB99600FBB59000FAB08B00F9AB8400F8A7
+      7D00F6A27700F59D7100F5996A00F3956500F3956500CD653100EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00EAAA8B00EAA68600E9A17F00E89B7600E7946C00E68E
+      6200E5875800E4814E00E47B4600E3763E00E3763E00E2723900}
+    Wx_Class = 'wxFileDialog'
+    Wx_Message = 'Choose a file'
+    Wx_Extensions = '*.*'
+    Wx_DefaultDir = 
+      'C:\Users\Wojte_000\Desktop\studiaa\Semestr_4\Grafika\projekt\gra' +
+      'fikaProjekt'
+    Wx_DialogStyle = []
+  end
+  object zegar: TWxTimer
+    Left = 81
+    Top = 98
+    Width = 28
+    Height = 27
+    TabOrder = 2
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF00FF00FF00E4DCD900B094900094696600814C4B008C615E00A587
+      8200B8A49E00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00E4DCD900B69A9500976564009D6B6B00A5767700AE818000AC7D7C00A171
+      6F008E5B5A008E5B5A00E4DCD900FF00FF00FF00FF00FF00FF00FF00FF00E7DF
+      DC00B18E8B009A686700AD828300D3B6B700EDD8D900DFCBCE00EDCBCE00D8AF
+      B100BE9092009E6C6C0095666500D8CFCC00FF00FF00FF00FF00FF00FF00C4A9
+      A6009A676700B3909000DCD6D500F9F5F500FEF4F40000000000F3DDDE00FADD
+      E000AE909100B99091009E6C6C009E767300FF00FF00FF00FF00E1D5D200A272
+      7200A0757600EEE5E50000000000A2A2A200FEF9F900FEF4F400FCEDEE00FBE5
+      E70000000000BFA0A300BE9091008F5B5C00C8BAB500FF00FF00D1B9B6009663
+      6200C7AEAE00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFAFA00FEF4F400FCEC
+      EC00FBE5E700FBDDE100D8AFB100A1727100A6888300FF00FF00C6A4A3008751
+      5000E8DEDE00E8E8E800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFAFA00FEF5
+      F700FCECEC00EED8DA00EDCBCE00AD7E7E008E626000FF00FF00C39A99007A44
+      4300FCFBFB0000000000D5D5D500FFFFFF00FFFFFF0090909000C3C3C300FEFA
+      FA00FEF5F60000000000DECACC00B083820083504F00FF00FF00CDABAA00824C
+      4B00E6DDDC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C7C7C70013131300C3C3
+      C300FEFAFA00FEF5F600EDD8D900A8787800976C6B00FF00FF00DBC5C2009461
+      6000C0A9A700FFFFFF00D5D5D500FFFFFF00FFFFFF00FFFFFF00C7C7C7001313
+      1300C3C3C300FFFAFA00D3B8B800A06E6E00B2989300FF00FF00EAE0DC00AC7E
+      7F0091656300EAE1E10000000000ECECEC00FFFFFF00DADADA00FFFFFF00C7C7
+      C7001C1C1C00E6DFE000AE8585009B686800D3C6C100FF00FF00FF00FF00DCC4
+      C20099676700A27C7B00EAE1E100FFFFFF00FFFFFF0000000000D5D5D500FFFF
+      FF00E8E2E100B59292009E6C6C00B99D9A00FF00FF00FF00FF00FF00FF009A68
+      6800692E2D009A68680091656300C0A9A800E7DCDC00FCFBFB00E8DFDE00C8AF
+      AF00A17877009D6B6B00692E2D00692E2D00FF00FF00FF00FF00FF00FF009569
+      6800CFA7A700692E2D00AD7E7F0094616100834D4C007C4545008A5353009966
+      6600A6767600692E2D00CFA7A700692E2D00FF00FF00FF00FF00FF00FF00EEE5
+      E200956968009A686800FF00FF00DCC5C200CFADAC00692E2D00C8A6A500D2BC
+      B800FF00FF00A87D7E00A77F7D00EBE7E400FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00804E4C00692E2D00692E2D00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
+    Wx_Class = 'wxTimer'
+    Wx_IDName = 'ID_ZEGAR'
+    Wx_IDValue = 1056
+    Wx_Interval = 10
+    Wx_AutoStart = False
+    EVT_TIMER = 'WxTimer1Timer'
+  end
+end

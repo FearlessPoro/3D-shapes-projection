@@ -1,0 +1,2 @@
+Nie wiem czemu WxDev nie umie sobie zapamietac jakich plikow potrzebuje do dzialania. Trzeba recznie dodac do projektu pliki macierz.h oraz macierz.cpp.
+Na niektorych komputerach nie bylo z tym problemu, ale jesli jest to pewnie to jest winne.
